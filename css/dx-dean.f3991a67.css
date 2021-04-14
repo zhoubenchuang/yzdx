@@ -1,0 +1,198 @@
+.grade[data-v-7fb4c3ee] {
+    position: relative
+}
+
+.grade[data-v-7fb4c3ee] .cube-scroll-nav-bar-item {
+    font-size: .426667rem
+}
+
+.grade .no-score[data-v-7fb4c3ee] {
+    font-size: .426667rem;
+    padding-top: 5.333333rem
+}
+
+.grade .box-grade[data-v-7fb4c3ee] {
+    padding: .533333rem;
+    text-align: left
+}
+
+.grade .box-grade .title[data-v-7fb4c3ee] {
+    font-size: .426667rem;
+    padding: 0 0 .533333rem;
+    font-weight: 600
+}
+
+.grade .box-grade .item[data-v-7fb4c3ee] {
+    display: flex;
+    font-size: .373333rem;
+    padding: .266667rem 0
+}
+
+.grade .box-grade .item .gpa[data-v-7fb4c3ee] {
+    flex-basis: 1.066667rem;
+    height: 1.066667rem;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    line-height: 1.066667rem;
+    border-radius: 50%;
+    font-weight: 600
+}
+
+.grade .box-grade .item .body[data-v-7fb4c3ee] {
+    margin: 0 .266667rem;
+    flex: 1
+}
+
+.grade .box-grade .item .body .label[data-v-7fb4c3ee] {
+    font-size: .426667rem;
+    line-height: .64rem;
+    font-weight: 600
+}
+
+.grade .box-grade .item .body .credit[data-v-7fb4c3ee] {
+    line-height: .426667rem;
+    color: #909399;
+    font-weight: 600
+}
+
+.grade .box-grade .item .score[data-v-7fb4c3ee] {
+    flex-basis: 0.8rem;
+    margin: auto;
+    font-weight: 600
+}
+
+.grade .box-grade .item .icon[data-v-7fb4c3ee] {
+    flex-basis: 0.64rem;
+    font-size: .426667rem;
+    line-height: 1.066667rem;
+    margin: auto;
+    color: #909399
+}
+
+.dx-dialog[data-v-5e55e83d] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    box-shadow: 0 .026667rem .106667rem #888;
+    z-index: 999
+}
+
+.dx-class-card[data-v-16a1fb69] {
+    position: relative;
+    border-radius: .133333rem;
+    margin: .266667rem;
+    padding: .266667rem .533333rem;
+    z-index: 1
+}
+
+.dx-class-card .badge[data-v-16a1fb69] {
+    position: absolute;
+    top: -.133333rem;
+    right: -.133333rem;
+    height: .266667rem;
+    width: .266667rem;
+    border-radius: 50%;
+    border: .133333rem solid #fff
+}
+
+.dx-class-card .header[data-v-16a1fb69] {
+    display: flex
+}
+
+.dx-class-card .header .label[data-v-16a1fb69] {
+    flex: 1;
+    font-size: .48rem;
+    line-height: .693333rem;
+    text-align: left;
+    font-weight: 600
+}
+
+.dx-class-card .header .time[data-v-16a1fb69] {
+    text-align: right;
+    flex-basis: 1.6rem;
+    font-size: .373333rem;
+    line-height: .8rem
+}
+
+.dx-class-card .body .item[data-v-16a1fb69] {
+    display: flex;
+    line-height: .64rem;
+    text-align: left
+}
+
+.dx-class-card .body .item .icon[data-v-16a1fb69] {
+    font-size: .426667rem;
+    height: .64rem
+}
+
+.dx-class-card .body .item .label[data-v-16a1fb69] {
+    flex: 1;
+    text-indent: .16rem;
+    font-size: .373333rem
+}
+
+.bottomSlide-enter-active[data-v-3bcc9ee2],
+.bottomSlide-leave-active[data-v-3bcc9ee2] {
+    transition: all .3s
+}
+
+.bottomSlide-enter[data-v-3bcc9ee2],
+.bottomSlide-leave-to[data-v-3bcc9ee2] {
+    transform: translate3d(0, 100%, 0)
+}
+
+.course[data-v-3bcc9ee2] {
+    position: relative
+}
+
+.course .box-table .schedule[data-v-3bcc9ee2] {
+    font-size: .426667rem
+}
+
+.course .box-table .header[data-v-3bcc9ee2] {
+    display: flex
+}
+
+.course .box-table .header .zero[data-v-3bcc9ee2] {
+    flex-basis: 0.533333rem
+}
+
+.course .box-table .header .th[data-v-3bcc9ee2] {
+    display: block;
+    line-height: .8rem;
+    flex: 1
+}
+
+.course .box-table .body[data-v-3bcc9ee2] {
+    display: flex;
+    flex-direction: column
+}
+
+.course .box-table .body .box-body[data-v-3bcc9ee2] {
+    border-top: .026667rem solid #eee;
+    display: flex;
+    height: 1.866667rem
+}
+
+.course .box-table .body .box-body .span[data-v-3bcc9ee2] {
+    line-height: 1.866667rem;
+    flex-basis: 0.533333rem
+}
+
+.course .box-table .body .box-body .td[data-v-3bcc9ee2] {
+    display: block;
+    flex: 1
+}
+
+.course .box-table .class-item[data-v-3bcc9ee2] {
+    position: absolute;
+    background: rgba(64, 158, 255, .9);
+    font-size: .373333rem;
+    line-height: .533333rem;
+    color: #fff;
+    border-radius: .133333rem;
+    text-align: left
+}
