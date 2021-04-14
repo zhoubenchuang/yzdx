@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 35.5px;">
 	<head>
 		<meta charset="utf-8">
 		<meta name="referrer" content="never">
@@ -30,6 +29,28 @@
 		<link href="/yzdx/css/chunk-vendors.fa3449e4.css" rel="stylesheet">
 		<link href="/yzdx/css/app.2d83c34c.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="/yzdx/css/dx-service.6627cb21.css">
+		<script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        /*设置一个屏幕最大宽度临界值，当大于这个宽度时，字体也不放大了*/
+                        if(clientWidth>=640){
+                            docEl.style.fontSize = '85px';
+                        }else{
+                            /*750是设计稿的宽度，100是基数为了方便换算，也可以为20，或者浏览器默认值16(px)*/
+                            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                        }
+                    };
+ 
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+ 
+    </script>
 		<script src="//pingjs.qq.com/h5/stats.js?v2.0.4" name="MTAH5" sid="500527514"
 		cid="500550897">
 		</script>
@@ -941,28 +962,76 @@
 				很抱歉，易知独秀需要您启用JavaScript。
 			</strong>
 		</noscript>
-	                <div id="app">
+		<div id="app">
 			<div data-v-69c87bfd="" class="layout">
 				<div data-v-69c87bfd="" class="cube-scroll-wrapper">
 					<div class="cube-scroll-content" style="transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); transition-duration: 20ms; transform: translate(0px, 0px) scale(1) translateZ(0px);">
 						<div class="cube-scroll-list-wrapper" style="min-height: 0px;">
-							<div data-v-d4d5c34c="" data-v-69c87bfd="" class="affairs-detail">
-								<div data-v-d4d5c34c="" class="user-info">
-									<div data-v-d4d5c34c="" class="header bg-purple">请假条-已通过 </div>
-									<div data-v-d4d5c34c="" class="body">
-										<p data-v-d4d5c34c=""><span data-v-d4d5c34c="">姓名：</span><span data-v-d4d5c34c="" id="username"></span></p>
-										<p data-v-d4d5c34c=""><span data-v-d4d5c34c="">学院：</span><span data-v-d4d5c34c="" id = "xueyuan"></span></p>
-										<p data-v-d4d5c34c=""><span data-v-d4d5c34c="">专业：</span><span data-v-d4d5c34c="" id = "zhuanye"></span></p>
-										<p data-v-d4d5c34c=""><span data-v-d4d5c34c="">开始时间：</span><span data-v-d4d5c34c="" id = "time1"></span></p>
-										<p data-v-d4d5c34c=""><span data-v-d4d5c34c="">结束时间：</span><span data-v-d4d5c34c="" id = "time2"></span></p>
-										<p data-v-d4d5c34c=""><span data-v-d4d5c34c="">请假理由：</span><span data-v-d4d5c34c="" id = "liyou"></span></p>
-										<p data-v-d4d5c34c=""><span data-v-d4d5c34c="">去向地址：</span><span data-v-d4d5c34c="" id = "quxiang"></span></p>
+							<div data-v-53f89046="" data-v-69c87bfd="" class="affairs-detail">
+								<div data-v-53f89046="" class="user-info">
+									<div data-v-53f89046="" class="header bg-purple">
+										请假条-已通过
+									</div>
+									<div data-v-53f89046="" class="body">
+										<p data-v-53f89046="">
+											<span data-v-53f89046="">
+												姓名：
+											</span>
+											<span data-v-53f89046="" id="username">
+											</span>
+										</p>
+										<p data-v-53f89046="">
+											<span data-v-53f89046="">
+												学院：
+											</span>
+											<span data-v-53f89046="" id = "xueyuan">
+											</span>
+										</p>
+										<p data-v-53f89046="">
+											<span data-v-53f89046="">
+												专业：
+											</span>
+											<span data-v-53f89046="" id = "zhuanye">
+											</span>
+										</p>
+										<p data-v-53f89046="">
+											<span data-v-53f89046="">
+												开始时间：
+											</span>
+											<span data-v-53f89046="" id = "time1">
+											</span>
+										</p>
+										<p data-v-53f89046="">
+											<span data-v-53f89046="">
+												结束时间：
+											</span>
+											<span data-v-53f89046="" id = "time2">
+											</span>
+										</p>
+										<p data-v-53f89046="">
+											<span data-v-53f89046="">
+												请假理由：
+											</span>
+											<span data-v-53f89046="" id = "liyou">
+											</span>
+										</p>
+										<p data-v-53f89046="">
+											<span data-v-53f89046="">
+												去向地址：
+											</span>
+											<span data-v-53f89046="" id = "quxiang">
+											</span>
+										</p>
 									</div>
 								</div>
 								<div data-v-53f89046="" class="operate">
-									<button data-v-53f89046="" type="button" icon="" _type="button" class="dx-btn dx-btn_primary">
+									<button data-v-53f89046="" type="button" icon="" _type="button" class="dx-btn dx-btn_primary" onclick="up()">
 										<!---->
 										返校销假
+                                                                                                                                                                <form form action="./yixiaojia.html" name="infor" method="get" id = "infor">
+											<input type="text" name = "infro" id = "infro" hidden="hidden"/>
+											<input type="submit" id = "sub" hidden="hidden"/>
+										</form>
 									</button>
 								</div>
 								<div data-v-53f89046="" class="spinner">
@@ -1078,6 +1147,7 @@
 			</div>
 		</div>
 	</body>
+                <script src="./static/font_1473670_uhpd7h1gg.js" ></script>
 
 	<script>
 		
